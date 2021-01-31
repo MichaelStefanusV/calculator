@@ -114,9 +114,10 @@ equal.addEventListener('click',() => {
         calc.result=operate(calc);
         document.getElementById('display-bot').innerHTML=calc.result;
         document.getElementById('display-top').innerHTML='';
-        calc.num1='';
+        calc.num1=calc.result;
         calc.num2='';
         calc.operator='';
+        calc.result='';
     }
 });
 
