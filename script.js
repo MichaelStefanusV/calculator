@@ -121,6 +121,21 @@ equal.addEventListener('click',() => {
     }
 });
 
+function del(){
+    let temp =  document.getElementById('display-bot').innerText;
+    temp=temp.substring(0, temp.length-1);
+    if(calc.num2!==''){
+        calc.num2=temp;
+        document.getElementById('display-bot').innerHTML=temp;
+    }else{
+        calc.num1=temp;
+        document.getElementById('display-bot').innerHTML=temp;
+    }
+}
+
+
+let dele = document.getElementById('delet');
+dele.addEventListener('click',del);
 
 //clear all
 let AC = document.getElementById('clear');
