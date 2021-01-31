@@ -1,0 +1,141 @@
+body #container{
+  height:100vh; 
+  width:auto;
+  background-color:beige;
+  display:grid;
+  grid-template-rows=repeat(12,1fr);
+  grid-template-columns=repeat(12,1fr);
+}
+
+body header{
+  grid-area:1/1/2/13;
+  display:flex;
+  justify-content:center;
+}
+
+body header p{
+  align-self:center;
+}
+
+body header a{
+  display:flex;
+  align-self: center;
+  justify-self: center;
+  margin-left:0.8vh;
+}
+
+body #main-content{
+  grid-area:2/1/13/13;
+  background-color:azure;
+  display:flex;
+  justify-content: center;
+}
+
+body #main-content #button-container{
+  padding:2vh;
+  align-self: center;
+  border-radius:20px;
+  width:40vh;
+  height: 50vh;
+  background-color:grey;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(7,1fr);
+  grid-gap:5px;
+}
+
+body #main-content #display{
+  grid-area:1/1/3/5;
+  border-radius:5px;
+  background-color:black;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  font-size: 1.2em;
+}
+
+body #main-content #display #display-bot{
+  align-self: end;
+  padding-right:2vh;
+  font-weight: bolder;
+}
+
+body #main-content #display #display-top{
+  align-self: end;
+  padding-right: 2vh;
+  font-weight: bolder;
+}
+
+
+body #main-content #plus{
+  grid-area:4/4/6/5;
+}
+
+body #main-content #equ{
+  grid-area:6/4/8/5;
+}
+
+body #main-content #zero{
+  grid-area:7/1/8/3;
+}
+
+body #main-content .num-button{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+body #main-content .operator-btt{
+  height: 100%;
+  width: 100%;
+  background-color:orange;
+  border-radius: 5px;
+  color:white;
+  display:flex;
+  font-weight:bolder;
+  justify-content: center;
+}
+
+body #main-content #delete{
+  height: 100%;
+  width: 100%;
+  background-color:orange;
+  border-radius: 5px;
+  color:white;
+  display:flex;
+  font-weight:bolder;
+  justify-content: center;
+}
+body #main-content #equ{
+  height: 100%;
+  width: 100%;
+  background-color:rgb(55,55,55);
+  border-radius: 5px;
+  color:white;
+  display:flex;
+  font-weight:bolder;
+  justify-content: center;
+}
+body #main-content #clear{
+  height: 100%;
+  width: 100%;
+  background-color:darkred;
+  border-radius: 5px;
+  color:white;
+  display:flex;
+  font-weight:bolder;
+  justify-content: center;
+}
+
+body #main-content .buttons{
+  transition: all .07s ease;
+}
+
+.klik{
+  transform:scale(0.9);
+  border-style: solid;
+  border-width:0.3vh;
+  border-color:black;
+}
