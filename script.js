@@ -74,7 +74,6 @@ num.forEach(numButton => {
     numButton.addEventListener('click',() => {
         if(calc.result!==''){
             clear();
-            console.log(calc.num1);
         }
 
         if(calc.operator===''){
